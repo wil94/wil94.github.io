@@ -1,14 +1,51 @@
----
-bg: "rails.jpg"
-layout: default
-crawlertitle: "Jekyll blog"
-title: "Voyager"
-summary: "main page"
----
+<!DOCTYPE>
+<html lang="es">
+<head>
+    <title>Wil site</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-escale=1">
 
-{% for post in site.posts limit: 5 %}
-  <article class="index-page">
-    <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
-    {{ post.excerpt }}
-  </article>
-{% endfor %}
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/estilos.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container">
+    <div class="jumbotron">
+        <h1>Williams Gutierrez</h1>
+        <p>Estudiante de ingeniería de sistemas</p>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            
+            <img src="img/lapaz.jpg" alt="La Paz" align="right" height="500" width=device-width class="img-thumbnail">    
+            
+            
+        </div>
+        <div class="col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <span class="glyphicon glyphicon-time" aria-hidden="true"></span> La Paz - Bolivia
+                </div>
+                <div class="panel-body">
+                    
+                    <p>La Paz, sede de gobierno de Bolivia, situada a mas de 3600 m.s.n.m.</p>
+                    <p>Es una ciudad única por su topografía, es como una ciudad construida dentro de algún
+                    crater, a pesar de ello posee edificaciones de grandes magnitudes, su clima es muy variado, 
+                en un mismo día puede granizar y al corto tiempo después podría estar soleando.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
