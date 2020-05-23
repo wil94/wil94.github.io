@@ -1,0 +1,187 @@
+:root {
+    --primary-color: #222831;
+    --white-color: #fff;
+    --text-primary-color: #effffb;
+    --black-color: #000;
+    --text-name-size: 2.5rem;
+    --text-title-size: 1.5rem;
+    --text-desc-size: 1.1rem;
+    --text-body-size: 1rem;
+    --separator-margin: 5vh;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+/* Definicion para los Textos */
+/* Titulos */
+.title-text {
+    font-family: 'Laila', sans-serif;
+    font-size: var(--text-title-size);
+    font-weight: 600;
+}
+
+.text-panel-header {
+    color: var(--text-primary-color);
+    text-shadow: 1px 1px 1px var(--black-color);
+}
+
+/* Textos para Descripciones primarias */
+.text-desc {
+    font-family: 'Nunito', sans-serif;
+    font-size: var(--text-desc-size);
+    font-weight: 300;
+}
+
+/* Textos comunes del body */
+.text-body {
+    font-family: 'Work Sans', sans-serif;
+    font-size: var(--text-body-size);
+    font-weight: 300;
+}
+
+/* Tetos resaltados */
+.spot-text {
+    font-family: sans-serif;
+    font-size: var(--text-desc-size);
+}
+
+/* Texto nombre principal */
+#name-page {
+    display: block;
+    width: 100%;
+    font-size: var(--text-name-size);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+
+.background-panel-header {
+    width: 100%;
+    height: 35vh;
+    background-image: url(../images/developer_one.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: .90;
+}
+
+.container-main-view {
+    position: relative;
+    width: 90%;
+    top: -25vh;
+    margin: 0 auto;
+    /* outline: 2px solid cyan; */
+}
+
+.name-img {
+    width: 35%;
+    text-align: center;
+    display: inline-block;
+    margin: 0 4% 0 0;
+    position: relative;
+    top: -6vh;
+    /* outline: 2px solid green; */
+}
+
+.personal-img {
+    width: 30vh;
+    height: 30vh;
+    background-image: url(../images/ImgPage.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 1px auto;
+    border-radius: 50%;
+    /* outline: 2px solid red; */
+}
+
+.main-desc {
+    display: inline-block;
+    width: 60%;
+    margin: 0;
+    position: relative;
+    top: 5vh;
+    /* outline: 2px solid red; */
+}
+
+.secondary-desc {
+    width: 80%;
+    margin-top: -19vh;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 1px;
+    /* outline: 2px solid green; */
+}
+
+.secondary-desc p, h5, h4 {
+    text-align: justify;
+    margin-bottom: 8px;
+}
+
+.separator {
+    width: 50%;
+    border: 1px solid var(--black-color);
+    margin: var(--separator-margin) auto;
+}
+
+.container-contacts {
+    width: 60%;
+    margin: var(--separator-margin) auto;
+    text-align: center;
+    /* outline: 2px solid red; */
+}
+
+.img-link {
+    display: inline-block;
+    width: 7vh;
+    height: 7vh;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    opacity: .75;
+    border-radius: 50%;
+}
+
+#twit-link {
+    background-image: url(../images/twitter_logo.png);
+}
+#insta-link {
+    background-image: url(../images/instagram_logo.jpg);
+}
+#face-link {
+    background-image: url(../images/facebook_logo.png);
+}
+#gith-link {
+    background-image: url(../images/github_logo.png);
+}
+#linkedn-link {
+    background-image: url(../images/linkedin_logo.png);
+}
+
+.container-footer {
+    height: 10vh;
+    background: var(--primary-color);
+    box-shadow: 2px 2px 3px 5px rgba(0, 0, 0, 0.5);
+    /* outline: 2px solid red; */
+}
+
+.foot-left {
+    float: left;
+    padding-top: 1.5%;
+    padding-left: 2%;
+}
+
+.foot-left span {
+    color: white;
+}
+
+.foot-right {
+    float: right;
+    padding-top: .75%;
+    padding-right: 2%;
+}
+
+.foot-right address {
+    color: white;
+}
